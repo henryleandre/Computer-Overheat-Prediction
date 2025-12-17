@@ -1,16 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Dec 16 23:33:31 2025
 
-@author: M Henry_Leandre
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Dec 16 21:38:19 2025
-
-@author: M Henry_Leandre
-"""
 
 import numpy as np
 import pickle
@@ -85,7 +73,14 @@ def main():
       add_bg_from_url()
       #    create title
       
-      st.title("💻 Laptop Overheating Prediction App")
+       st.markdown(
+    """
+    <h1 style='text-align: center; font-weight: 700;'>
+        💻 Laptop Overheating Prediction App
+    </h1>
+    """,
+    unsafe_allow_html=True
+)
       st.markdown(
         "This application predicts **laptop overheating issues** "
         "based on usage and battery health parameters using a "
@@ -117,4 +112,5 @@ def main():
     
 if __name__=='__main__':
     main()
+
 
